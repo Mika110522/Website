@@ -1,0 +1,551 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+nav img {
+    height: 70px;
+}
+
+/*----------------------Meni--------------------------*/
+#meni {
+    margin: 5px;
+    list-style: none;
+}
+
+#meni li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: myFont2;
+}
+
+#meni li a {
+    text-decoration: none;
+    color: white;
+}
+
+#meni li:hover {
+    border-radius: 3px;
+    transition: 0.5s;
+    background-color: #179217;
+}
+
+/*----------------------Podmeni 1--------------------------*/
+#podmeni {
+    display: none;
+}
+
+#meni li:hover #podmeni {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+    margin-left: -10px;
+    padding: 0px 10px;
+    border: 3px solid #137313;
+}
+
+#meni li:hover #podmeni li {
+    border-bottom: 1px solid #abfeb0;
+    text-align: left;
+    display: block;
+    margin: 5px;
+    background: transparent;
+}
+
+#meni li:hover #podmeni li:last-child {
+    border-bottom: none;
+}
+
+#podmeni li a:hover {
+    color: #00cc00;
+}
+
+/*----------------------Podmeni 2--------------------------*/
+#podmeni2 {
+    display: none;
+}
+
+#objekti:hover #podmeni2 {
+    position: absolute;
+    display: block;
+    margin-top: -45px;
+    margin-left: 165px;
+    border: 3px solid #137313;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*----------------------index--------------------------*/
+body {
+    background-color: #a4dea2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../files/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    font-family: myfont;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px auto;
+    margin-left: 45%;
+}
+
+.button:hover{
+    color: #ffffff;
+    background-color: #0c390c;
+}
+
+.indexTitle {
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 6em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    font-family: myFont;
+}
+
+.indexTitle+p {
+    font-size: 1.5em;
+    margin: 30px 200px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*----------------------Geography--------------------------*/
+article {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: -5px auto;
+    padding: 0px 40px;
+    padding-top: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    padding: 20px;
+    font-family: myFont;
+    letter-spacing: 3px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.blocks {
+    text-align: center;
+    background-color: #70e27c;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    display: inline-block;
+    border: 2px green double;
+    z-index: -1;
+}
+
+.blocks:nth-child(2) {
+    width: 150px;
+    transform: rotate(10deg) translate(10px, -30px);
+}
+
+.blocks:nth-child(3) {
+    width: 120px;
+    transform: rotate(-10deg) translate(10px, -20px);
+}
+
+.blocks:nth-child(4) {
+    width: 210px;
+    transform: rotate(10deg) translate(10px, 10px);
+}
+
+.blocks:nth-child(5) {
+    width: 170px;
+    transform: rotate(-10deg) translate(10px, 20px);
+}
+
+.blocks:nth-child(6) {
+    width: 200px;
+    transform: rotate(10deg) translate(5px, -30px);
+}
+
+iframe {
+    margin: 70px 10px;
+}
+
+.textGeography {
+    margin-top: -350px;
+    margin-bottom: 200px;
+    margin-left: 600px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin: 5px auto;
+    width: 500px;
+    border-top: 1px solid #011401;
+    color: #011601;
+    font-size: small;
+}
+
+/*----------------------Population--------------------------*/
+#sectionOne,
+#sectionTwo {
+    display: flex;
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #83f99b;
+    padding: 10px;
+}
+
+td {
+    background-color: white;
+    padding: 10px;
+    color: #000000;
+}
+
+#table1 td:nth-child(odd) {
+    background-color: #d4ffdc;
+}
+
+#table2 td:nth-child(odd) {
+    background-color: #d4ffdc;
+}
+
+svg {
+    margin: 20px auto;
+    margin-left: 200px;
+    text-align: center;
+    border: 2px solid #83f99b;
+    width: 500px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.501);
+}
+
+polyline {
+    stroke: #4dc44f;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 5s ease-in forwards;
+    animation-iteration-count: 20;
+    animation-direction: normal;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*----------------History------------------*/
+h3 {
+    margin: 15px auto;
+    text-align: center;
+}
+
+#name {
+    display: flex;
+    margin: 10px auto;
+}
+
+.story {
+    margin: 20px 10px;
+    padding: 15px;
+    text-align: justify;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.story:hover {
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.9);
+}
+
+#images {
+    margin: 20px 200px;
+    display: flex;
+}
+
+.ptica1,
+.ptica2 {
+    max-width: 300px;
+    margin: 0px 20px;
+    border: 3px solid black;
+}
+
+/*---------------School-------------------*/
+.schoolImg {
+    width: 80%;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skola {
+    max-width: 400px;
+    height: 300px;
+    border: 6px solid #9fec9f;
+    box-shadow: 5px 5px 10px #2c2b2b;
+}
+
+.schoolTable1 {
+    width: 1000px;
+}
+
+/*---------------Gallery-------------------*/
+.galleryArticle {
+    width: 85%;
+}
+
+.gallery {
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.gallery figure {
+    width: 400px;
+    height: 310px;
+    padding: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.9);
+    background-color: #d8fadd;
+    float: left;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+.gallery figure .galleryImg {
+    overflow: hidden;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.gallery figure img {
+    height: 100%;
+}
+
+.gallery:hover .galleryImg {
+    filter: grayscale(0.9);
+    transition: 0.6s;
+}
+
+.galleryImg:hover {
+    transform: scale(1.15);
+}
+
+.galleryImg:hover:hover {
+    filter: grayscale(0);
+}
+
+/*---------------Contact-------------------*/
+
+.about {
+    margin: 50px auto;
+    width: 250px;
+    height: 200px;
+    text-align: left;
+}
+
+.about th,
+.about td {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1px;
+    margin: 2px;
+}
+
+form {
+    margin: 10px auto;
+    width: 550px;
+    line-height: 2em;
+    border: none;
+}
+
+fieldset {
+    margin: 15px auto;
+    padding: 6px;
+    font-size: 1.1em;
+    background-color: #c4ebcd;
+    color: #000000;
+}
+
+.textCenter {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+input,
+select,
+textarea {
+    color: #02690e;
+    font-size: 1em;
+    margin: 6px;
+    padding: 2px 4px;
+    font-family: Calibri;
+}
+
+.r {
+    color: red;
+}
+
+.btn {
+    background-color: #80ea8e;
+    border: 2px outset #0cb52b;
+}
+
+.btn:hover {
+    background-color: #38be5a;
+}
+
+.sendTD {
+    margin: 5px auto;
+    text-align: center;
+}
+
+textarea {
+    min-height: 30px;
+    max-height: 300px;
+    min-width: 490px;
+    max-width: 490px;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.contactBox {
+    display: flex;
+}
+
+.contactBox div {
+    margin: 10px;
+}
+
+.icon .fa {
+    font-size: 22px;
+}
+
+.contact a {
+    color: #1b471b;
+    text-decoration: none;
+}
+
+.social-media {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.social-media .fa {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.social-media .fa:hover {
+    color: #bdffbe;
+}
+
+/*-------------Font--------------*/
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Androgyne_TB.ttf");
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("../fonts/Avdira_J.otf");
+}
+
+/*-------------Media----------------*/
+@media screen and (max-width:1530px) {
+    .blocks {
+        display: contents;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .schoolTable1 {
+        width: 600px;
+    }
+
+    .schoolImg {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .textGeography {
+        margin: 30px;
+        display: block;
+    }
+
+    #sectionOne,
+    #sectionTwo {
+        display: block;
+    }
+
+    svg {
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    #name,
+    #images {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .contact {
+        display: block;
+    }
+}

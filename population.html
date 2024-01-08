@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Моят роден край - Горна Любата" />
+    <meta name="author" content="Миляна Василев" />
+    <meta name="keyword" content="selo, priroda, Gornja Ljubata," />
+    <title>Gornja Ljubata</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="files/icon.png" />
+</head>
+<body>
+    <nav>
+        <img src="files/logo.png">
+        <ul id="meni">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="#">O selu </a>
+                <ul id="podmeni">
+                    <li><a href="geography.html">Geografija</a></li>
+                    <li><a href="population.html">Stanovništvo</a></li>
+                    <li><a href="history.html">Istorija</a></li>
+                    <li id="objekti"><a href="#">Znamenitosti</a>
+                        <ul id="podmeni2">
+                            <li><a href="church.html">Crkva</a></li>
+                            <li><a href="school.html">Škola</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Galerija</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <header>
+            <h2>Stanovništvo</h2>
+        </header>
+        <p>Prema popisu iz 2002. godine u naselju Gornja Ljubata živelo je 402 punoletna stanovnika, a prosečna starost
+            stanovništva iznosila je 46,9 godina (44,1 kod muškaraca i 49,6 kod žena). U naselju je imalo 192
+            domaćinstva, a prosečan broj članova po domaćinstvu bio je 2,53 člana. U poslednja tri popisa, primećen
+            je pad u broju stanovnika.</p>
+        <div id="sectionOne">
+            <table border="2px" id="table1">
+                <tr>
+                    <th colspan="2">Broj stanovnika tokom 20.veka</th>
+                </tr>
+                <tr>
+                    <th>Godina popisa</th>
+                    <th>Broj stanovnika</th>
+                </tr>
+                <tr>
+                    <td>1948</td>
+                    <td>1405</td>
+                </tr>
+                <tr>
+                    <td>1953</td>
+                    <td>1657</td>
+                </tr>
+                <tr>
+                    <td>1961</td>
+                    <td>1621</td>
+                </tr>
+                <tr>
+                    <td>1971</td>
+                    <td>1580</td>
+                </tr>
+                <tr>
+                    <td>1981</td>
+                    <td>1064</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>660</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>485</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>296</td>
+                </tr>
+            </table>
+            <svg width="400px" height="350px">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30, 27)">
+                    <g id="y_axis" font-size="12" fill="#000000" opacity="1" font-weight="normal">
+                        <text>
+                            <tspan x="25" y="265">0</tspan>
+                        </text>
+                        <text>
+                            <tspan x="17" y="190">662</tspan>
+                        </text>
+                        <text>
+                            <tspan x="12" y="115">1324</tspan>
+                        </text>
+                        <text>
+                            <tspan x="12" y="45">1988</tspan>
+                        </text>
+                    </g>
+                    <g id="GRAPHS" transform="translate(64, 16)" stroke-linecap="round" stroke-width="10">
+                        <polyline id="grafik" points="3 90 30 60 115 70 180 185 225 200 "></polyline>
+                    </g>
+                    <g id="x_axis" transform="translate(72, 272)" font-size="12" fill="#000000" opacity="1">
+                        <text>
+                            <tspan x="0.4" y="11">1950</tspan>
+                        </text>
+                        <text>
+                            <tspan x="40" y="11">1960</tspan>
+                        </text>
+                        <text>
+                            <tspan x="80" y="11">1970</tspan>
+                        </text>
+                        <text>
+                            <tspan x="120" y="11">1980</tspan>
+                        </text>
+                        <text>
+                            <tspan x="160" y="11">1990</tspan>
+                        </text>
+                        <text>
+                            <tspan x="200" y="11">2000</tspan>
+                        </text>
+                        <text>
+                            <tspan x="240" y="11">2010</tspan>
+                        </text>
+                    </g>
+                    <g id="grid" transform="translate(46, 5)" stroke="#000000" stroke-linecap="square" opacity="0.5">
+                        <path d="M0.3,40 L290,40" id="Line"></path>
+                        <path d="M0.3,110 L290,110" id="Line"></path>
+                        <path d="M0.3,185 L290,185" id="Line"></path>
+                        <path d="M0.3,255 L290,255" id="Line"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <hr>
+        <div id="sectionTwo">
+            <table id="table2" border="2px">
+                <tr>
+                    <th colspan="8">Broj domaćinstava po popisima od 1948-2002.</th>
+                </tr>
+                <tr>
+                    <th>Godina popisa</th>
+                    <td>1948</td>
+                    <td>1953</td>
+                    <td>1961</td>
+                    <td>1971</td>
+                    <td>1981</td>
+                    <td>1991</td>
+                    <td>2002</td>
+                </tr>
+                <tr>
+                    <th>Broj domaćinstava</th>
+                    <td>229</td>
+                    <td>273</td>
+                    <td>324</td>
+                    <td>350</td>
+                    <td>309</td>
+                    <td>227</td>
+                    <td>192</td>
+                </tr>
+            </table>
+            <table id="table3" border="2px">
+                <tr>
+                    <th colspan='3'>Etnički sastav prema popisu iz 2002.</th>
+                </tr>
+                <tr>
+                    <th>Narod</th>
+                    <th>Broj stanovnika</th>
+                    <th>Procenat</th>
+                </tr>
+                <tr>
+                    <th>Bugari</th>
+                    <td>415</td>
+                    <td>85.56%</td>
+                </tr>
+                <tr>
+                    <th>Srbi</th>
+                    <td>32</td>
+                    <td>6.59%</td>
+                </tr>
+                <tr>
+                    <th>Rumuni</th>
+                    <td>1</td>
+                    <td>0.20%</td>
+                </tr>
+                <tr>
+                    <th>Jugosloveni</th>
+                    <td>1</td>
+                    <td>0.20%</td>
+                </tr>
+                <tr>
+                    <th>Nepoznato</th>
+                    <td>8</td>
+                    <td>1.64%</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            Web design <br/>
+            Miljana Vasilev &copy; 2022
+        </footer>
+    </article>
+
+</body>
+</html>

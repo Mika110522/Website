@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Моят роден край - Горна Любата" />
+    <meta name="author" content="Миляна Василев" />
+    <meta name="keyword" content="selo, priroda, Gornja Ljubata," />
+    <title>Gornja Ljubata</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="files/icon.png" />
+</head>
+<body>
+    <nav>
+        <img src="files/logo.png">
+        <ul id="meni">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="#">O selu </a>
+                <ul id="podmeni">
+                    <li><a href="geography.html">Geografija</a></li>
+                    <li><a href="population.html">Stanovništvo</a></li>
+                    <li><a href="history.html">Istorija</a></li>
+                    <li id="objekti"><a href="#">Znamenitosti</a>
+                        <ul id="podmeni2">
+                            <li><a href="church.html">Crkva</a></li>
+                            <li><a href="school.html">Škola</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Galerija</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <header>
+            <h2>Kontakt</h2>
+        </header>
+        <p class="textCenter"> Ako imate misljenje, preporuku ili zabelešku, molimo Vas pišite nam!</p>
+        <section class="info">
+            <form action="#" enctype="multipart/form-data" method="post">
+                <fieldset>
+                    <div>
+                        <label for="inputName">Pošiljalac<span class="r">*</span>:</label>
+                        <input type="text" name="inputName" id="inputName" size="50" required
+                            placeholder="Ovo polje je obavezno!" />
+                    </div>
+                    <div>
+                        <label for="inputMail">E-mail<span class="r">*</span>:</label>
+                        &nbsp; &nbsp;
+                        <input type="email" name="inputMail" id="inputMail" size="50" required
+                            placeholder="Ovo polje je obavezno!" />
+                    </div>
+                    <div>
+                        <label for="listTop">Tema:</label>
+                        <input list="inpTop" size="45" id="listTop" />
+                        <datalist id="inpTop">
+                            <option value="Priroda"></option>
+                            <option value="Struktura"></option>
+                            <option value="Kultura"></option>
+                            <option value="Izgled"></option>
+                            <option value="Razno"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        Status:</br>
+                        <input type="checkbox" name="cbWorkLoad" value="Učenik" checked id="student">
+                        <label for="student">Učenik</label>
+                        &nbsp; &nbsp;
+                        <input type="checkbox" name="cbWorkLoad" value="Zaposlen" id="employee">
+                        <label for="employee">Zaposlen</label>
+                        &nbsp; &nbsp;
+                        <input type="checkbox" name="cbWorkLoad" value="Nezaposlen" id="jobless">
+                        <label for="jobless">Nezaposlen</label>
+                        &nbsp; &nbsp;
+                        <input type="checkbox" name="cbWorkLoad" value="Penzioner" id="retiree" />
+                        <label for="retiree">Penzioner</label>
+                    </div>
+                    <div>
+                        Pol:</br>
+                        <input type="radio" name="rbGender" id="male" value="Muški">
+                        <label for="male">Muški</label>
+                        &nbsp; &nbsp;
+                        <input type="radio" name="rbGender" id="female" value="Ženski">
+                        <label for="female">Ženski</label>
+                        &nbsp; &nbsp;
+                        <input type="radio" name="rbGender" id="other" value="Drugo">
+                        <label for="other">Drugo</label>
+                    </div>
+                    <div>
+                        <label>Uzrast:</label>
+                        &nbsp;&nbsp;
+                        <select name="age" size="1">
+                            <option value="до 12 г.">до 12 god.</option>
+                            <option value="13 - 18 год.">13 - 18 god.</option>
+                            <option value="19 - 35 год.">19 - 35 god.</option>
+                            <option value="36 - 64 год.">36 - 64 god.</option>
+                            <option value="над 65 г.">iznad 65 г.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inputDate">Datum:</label>
+                        &nbsp;&nbsp;
+                        <input type="date" name="inputDate" id="inputDate" />
+                    </div>
+                    <div>
+                        <label for="txtArea">Sadržaj pisma:</label><br />
+                        <textarea name="txtArea" cols="60" rows="3" required
+                            placeholder="Polje je obavezno!"></textarea>
+                        </textarea>
+                    </div>
+                    <div class="sendTD">
+                        <input type="reset" name="resBtn" value="Izbriši" class="btn">
+                        <input type="submit" name="subBtn" value="Pošalji" class="btn">
+                    </div>
+                </fieldset>
+            </form>
+            <hr>
+            <table class="about" >
+                <tr>
+                    <th colspan="2">O autoru:</th>
+                </tr>
+                <tr>
+                    <th>Ime</th>
+                    <td>Miljana</td>
+                </tr>
+                <tr>
+                    <th>Prezime</th>
+                    <td>Vasilev</td>
+                </tr>
+                <tr>
+                    <th>Fakultetski broj</th>
+                    <td>22250121010</td>
+                </tr>
+                <tr>
+                    <th>Kurs</th>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <th>Smer</th>
+                    <td>Informatika</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <address class="contact">
+            <div class="contactBox">
+                <div class="icon">
+                    <i class="fa fa-envelope"></i><br />
+                </div>
+                <div>
+                    <strong>Poštanska adresa:</strong><br />
+                    17544 Donja Ljubata, BB<br />
+                    Bosilegrad, Srbija
+                </div>
+            </div>
+            <div class="contactBox">
+                <div class="icon">
+                    <i class="fa fa-phone"></i><br />
+                </div>
+                <div>
+                    <strong>Kontakt telefon:</strong><br />
+                    +381 65 4732 254
+                </div>
+            </div>
+            <div class="contactBox">
+                <div class="icon">
+                    <i class="fa fa-at"></i><br />
+                </div>
+                <div>
+                    <strong>Email:</strong><br />
+                    <a href="mailto:gornjaljubata@gmail.com" target="_blank">gornjaljubata@gmail.com</a>
+                </div>
+            </div>
+        </address>
+        <hr>
+        <div class="social-media">
+            <a href="https://www.facebook.com/pages/Gornja%20Ljubata/215079941860762/" class="fa fa-facebook"
+                target="_blank"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="https://bg.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%BD%D0%B0_%D0%9B%D1%8E%D0%B1%D0%B0%D1%82%D0%B0"
+                class="fa fa-google" target="_blank"></a>
+            <a href="" class="fa fa-youtube"></a>
+            <a href="" class="fa fa-pinterest"></a>
+        </div>
+        <footer>
+            Web design <br />
+            Miljana Vasilev &copy; 2022
+        </footer>
+    </article>
+
+</body>
+</html>

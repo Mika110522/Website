@@ -1,0 +1,61 @@
+body {
+    background-color: #a4dea2;
+    background-image: url("../files/crkva2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dt {
+    margin: 20px 0px;
+    font-size: larger;
+}
+
+.church {
+    display: flex;
+    margin: 20px 0px;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+ul {
+    margin: 0px 20px;
+    list-style-type: none;
+}
+
+.church li {
+    background: url("../files/landmark.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 20px;
+    line-height: 45px;
+    padding-left: 30px;
+}
+
+.churchImg {
+    margin: 20px 30px;
+}
+
+.crkva {
+    max-width: 400px;
+    border: 6px double white;
+    margin: 5px;
+}
+
+footer {
+    color: #c6f9da;
+}
+
+@media screen and (max-width:1000px)
+{
+    .church{
+        display: block;
+    }
+}
